@@ -1,0 +1,206 @@
+@import "./reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+body {
+  color: black;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  min-width: 1230px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.title-1 {
+  font-weight: 600;
+  font-size: 34px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 7px 22px;
+  background-color: #070707;
+  border-radius: 30px;
+  font-size: 18px;
+  color: #fff;
+
+  transition: background-color 0.2s ease-in, top 0.2s ease-in;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #000000;
+}
+
+.btn:active {
+  position: relative;
+  top: 2px;
+
+  background-color: #424242;
+}
+
+/* Header*/
+
+.header {
+  padding-top: 46px;
+  background-color: #f1f1f1;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 76px;
+}
+
+.logo {
+  position: relative;
+  padding: 0 12px 3px 0;
+  font-weight: 700;
+  font-size: 32px;
+  color: #000;
+  line-height: 1;
+}
+.logo::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #fda300;
+  border-radius: 55%;
+}
+
+.nav__list {
+  display: flex;
+  column-gap: 30px;
+  font-weight: 500;
+  font-size: 14px;
+}
+.nav__link {
+  color: #000;
+}
+.nav__link.active {
+  color: #606060;
+}
+
+.header__content {
+  max-width: 500px;
+}
+
+.header__row {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+
+.header__title {
+  margin-top: 125px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 44px;
+}
+
+.header__txt {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.services {
+  padding: 90px 0;
+}
+
+.services__row {
+  display: flex;
+  column-gap: 30px;
+  justify-content: space-between;
+}
+
+.services__card {
+}
+
+.services-card-img {
+  margin-bottom: 30px;
+}
+
+.sevices-card-title {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 24px;
+  color: #000000;
+}
+
+.services-card-txt {
+  width: 370px;
+  height: 84px;
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 200%;
+  color: #000000;
+}
+
+.portfolio {
+  padding: 90px 0;
+  background-color: #f1f1f1;
+}
+
+.portfolio__title {
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.project {
+  text-align: center;
+}
+.project + .project {
+  margin-top: 90px;
+}
+.project__img {
+  margin-bottom: 40px;
+}
+
+.project-title {
+  font-size: 18px;
+}
+
+.project-title a {
+  text-decoration: underline;
+  color: #000;
+}
+
+.contacts {
+  padding: 90 0;
+  text-align: center;
+}
+.contacts-title {
+  margin-bottom: 40px;
+}
+
+.contacts-content {
+  margin: 0 auto 40px;
+  max-width: 480px;
+
+  font-size: 18px;
+}
+.contacts-content p + p {
+  margin-top: 1em;
+}
+
+.contacts-button {
+  margin-bottom: 80px;
+}
+.contacts-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 60px;
+  margin-bottom: 40px;
+}
+
+.contacts-footer {
+  color: #828282;
+}
